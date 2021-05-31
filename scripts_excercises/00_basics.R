@@ -42,12 +42,16 @@ typeof(3.2)
 # and run your code using ctrl + return!
 
 # 2.1) What data type is 2? Think first, then try typeof(). Did you expect this result?
+typeof(2)
 
 # 2.2) What data type is 1:4?
+typeof(1:4)
 
 # 2.3) What data type is "R"? What is "I love R"?
+typeof('R')
 
 # 2.4) What data type is TRUE? What data type is FALSE? (Don't use quotation marks around these!)
+typeof(TRUE)
 
 #### 3 LOGICALS ####
 
@@ -58,18 +62,33 @@ typeof(3.2)
 
 # 3.1) Try 12 == 12. And now 12 == 13. What does == do?
 
-# 3.2) Try out: FALSE & FALSE, then FALSE & TRUE and finally, TRUE & TRUE. What happens?
+# 3.2) Try out: FALSE & FALSE, then FALSE & TRUE and finally, TRUE & TRUE. What happens?  
+FALSE & FALSE
+FALSE & TRUE
+TRUE & TRUE
+#Und Verknüpfung
 
 # 3.3) Try the same as above, but replace & with | (alt gr + <). Do you know what do & and | do?
+FALSE | FALSE
+FALSE | TRUE
+TRUE | TRUE
+#Oder Verknüpfung
 
 # 3.4) What do you think will be the result of 4 < 3 | 4 == 4? What is 4 < 3 & 4 == 4?
+4 < 3 | 4 == 4   #(je nachdem was die logische Verknüpfung ist)
+4 < 3 & 4 == 4 
 
 # 3.5) What is "cat" != "dog"?
+"cat" != "dog" #(ungleich Zeichen)
 
 # 3.6) What is "cat" > "dog"? What about other words? Can you find a pattern?
+"cat" > "dog" #(geht  nicht um Wortlänge?)
+"cat" > "apple" #(geht um Alphabet!! c vor a)
 
 # 3.7) By the way, did you know that logicals have numeric representations? Try TRUE + 1.
 #      Then try FALSE + 1. What is the numeric value of TRUE? What is the numeric value of FALSE?
+TRUE + 1
+FALSE + 1 
 
 #### 4 VARIABLES ####
 
@@ -80,19 +99,24 @@ typeof(3.2)
 # like this:
 
 single_number <- 7
+another_number = 12 #macht genau das gleiche, aber der gute Stil ist Pfeil :-) Achtung: Variablen sinnvoll benennen für bessere Lesbarkeit
 
 # ALWAYS USE VARIABLE NAMES THAT TELL YOU WHAT THAT VARIABLE CONTAINS!!!
 
 # 4.1) Type single_number into the console and hit return.
+single_number #es kommt 7
 
 # 4.2) Run the following code. What will happen now if you type single_number into the console?
-single_number <- 2
+single_number <- 2 #single number ist nun 2, überschrieben!! ohne Warnung, immer bewusst machen
 
 # 4.3) Assign something to a variable with a name of your choice.
+test_data <- 3:4
+number_participants <- 20
+own_variable <- "own test"
 
 # 4.4) Examine what happens here. What is the result? What do you think will single_number
 #      contain now? 2 or 6?
-single_number + 4
+single_number + 4 #da 2 die neue Numver ist, kommt jetzt 6 heraus
 
 # 4.5) What do you observe here?
 number2 <- 2
@@ -102,6 +126,9 @@ number2 + number6
 
 multiplied <- number2 * number6
 multiplied
+
+# Delete a variable
+rm(single_number) #rm für remove
 
 #### THIS IS A GIT HUB CHECKPOINT ####
 
